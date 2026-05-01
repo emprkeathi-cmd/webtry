@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farah Magdalena Marketing Strategin & Funnel Expertin</title>
+  <meta name="description" content="Farah Magdalena Ich schärfe deine Positionierung, optimiere deinen Funnel und begleite dich bis zu deinem Wunschergebnis. Planbare Kunden für Selbstständige und Unternehmer." />
+  <meta name="keywords" content="Farah Magdalena, Marketing Strategin, Funnel Expertin, Werbetexterin, Verkaufspsychologie, planbare Kunden, DACH" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --gold: #E0B348;
+      --burgundy: #5E1414;
+      --slate: #7A86A1;
+      --dark: #ffffff;
+      --light: #3d4a5c;
+      --white: #ffffff;
+      --text: #1a1a1a;
+      --muted: #555;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--light);
+      color: #ffffff;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--dark);
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav img { height: 48px; }
+    nav a.nav-cta {
+      background: var(--gold);
+      color: var(--dark);
+      padding: 10px 22px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      transition: opacity 0.2s;
+    }
+    nav a.nav-cta:hover { opacity: 0.85; }
+
+    /* HERO */
+    .hero {
+      background: var(--dark);
+      color: #1a1a1a;
+      text-align: center;
+      padding: 30px 20px 60px;
+    }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.2;
+      max-width: 800px;
+      margin: 0 auto 10px;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero p {
+      font-size: 1.05rem;
+      color: #1a1a1a;
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+
+    /* VIDEO */
+    .video-wrap {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+    .video-inner {
+      padding: 56.25% 0 0 0;
+      position: relative;
+    }
+    .video-inner iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    /* CTA BUTTON */
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: #000000;
+      padding: 16px 36px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(224,179,72,0.35);
+    }
+    .btn-center { text-align: center; margin: 32px 0; }
+
+    /* HOOK SECTION */
+    .hook {
+      background: var(--dark);
+      color: #1a1a1a;
+      text-align: center;
+      padding: 48px 20px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .hook p {
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      max-width: 720px;
+      margin: 0 auto 12px;
+      line-height: 1.6;
+    }
+    .hook p strong { color: var(--gold); }
+    .hook p.sub {
+      font-size: 1rem;
+      color: #1a1a1a;
+      margin-top: 8px;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 64px 20px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    section.wide { max-width: 1000px; }
+    section.dark-bg {
+      background: var(--dark);
+      color: var(--white);
+      max-width: 100%;
+      padding: 64px 20px;
+    }
+    section.dark-bg .inner { max-width: 860px; margin: 0 auto; }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+    h2 span { color: var(--gold); }
+    h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .label {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--dark);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 2px;
+      margin-bottom: 16px;
+    }
+
+    p { margin-bottom: 16px; color: #ffffff; font-size: clamp(1.1rem, 2.5vw, 1.4rem); }
+    .dark-bg p { color: #1a1a1a; }
+    .dark-bg h2, .dark-bg h3 { color: #1a1a1a; }
+
+    /* DIVIDER */
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      margin: 24px 0;
+    }
+
+    /* BULLETS */
+    .check-list { list-style: none; margin: 20px 0; }
+    .check-list li {
+      padding: 10px 0 10px 36px;
+      position: relative;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      color: #ffffff;
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+    }
+    .dark-bg .check-list li { border-bottom-color: rgba(255,255,255,0.15); color: #ffffff; }
+    .check-list li::before {
+      content: '✦';
+      color: var(--gold);
+      position: absolute;
+      left: 0;
+      font-size: 0.8rem;
+      top: 12px;
+    }
+
+    /* PLUS LIST */
+    .plus-list { list-style: none; margin: 20px 0; }
+    .plus-list li {
+      padding: 10px 0 10px 36px;
+      position: relative;
+      color: var(--text);
+      font-size: 0.97rem;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .plus-list li::before {
+      content: '+';
+      color: var(--gold);
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+      font-size: 1.2rem;
+      top: 8px;
+    }
+
+    /* QUOTE */
+    blockquote {
+      border-left: 4px solid var(--gold);
+      padding: 16px 24px;
+      margin: 24px 0;
+      background: rgba(224,179,72,0.07);
+      border-radius: 0 8px 8px 0;
+    }
+    blockquote p {
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--text);
+      margin: 0 0 8px;
+    }
+    blockquote cite {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--slate);
+    }
+
+    /* TESTIMONIAL GRID */
+    .testimonials {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 32px 0;
+    }
+    @media (max-width: 640px) { .testimonials { grid-template-columns: 1fr; } }
+    .testimonial-card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 28px;
+      border: 1px solid rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .testimonial-card img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--gold);
+    }
+    .testimonial-card p { font-style: italic; margin: 0; color: var(--text); }
+    .testimonial-card cite { font-size: 0.85rem; font-weight: 600; color: var(--slate); }
+
+    /* PILLARS */
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 32px 0;
+    }
+    @media (max-width: 640px) { .pillars { grid-template-columns: 1fr; } }
+    .pillar {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(224,179,72,0.3);
+      border-radius: 8px;
+      padding: 28px 20px;
+      text-align: center;
+    }
+    .pillar .number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .pillar h3 { font-size: clamp(1.3rem, 2.5vw, 1.7rem); color: #1a1a1a; margin-bottom: 8px; }
+    .pillar p { font-size: 0.9rem; color: #1a1a1a; margin: 0; }
+
+    /* IMAGE SECTION */
+    .img-text {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    @media (max-width: 640px) { .img-text { grid-template-columns: 1fr; } }
+    .img-text img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* MONEY SECTION */
+    .money-box {
+      background: var(--burgundy);
+      color: var(--white);
+      border-radius: 8px;
+      padding: 36px;
+      margin: 32px 0;
+      text-align: center;
+    }
+    .money-box p { color: #ffffff; margin: 0 0 12px; }
+    .money-box .big { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 700; color: var(--gold); }
+
+    /* SHIELD LIST */
+    .shield-list { list-style: none; margin: 20px 0; }
+    .shield-list li {
+      padding: 12px 0 12px 40px;
+      position: relative;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .shield-list li::before {
+      content: '🛡️';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      font-size: 1.1rem;
+    }
+
+    /* FAQ */
+    .faq { margin: 32px 0; }
+    .faq-item {
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      padding: 20px 0;
+    }
+    .faq-item strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .faq-item p { margin: 0; font-size: 0.95rem; }
+
+    /* NOT FOR YOU */
+    .not-for-you {
+      background: rgba(94,20,20,0.05);
+      border: 1px solid rgba(94,20,20,0.15);
+      border-radius: 8px;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    .not-for-you ul { list-style: none; margin-top: 16px; }
+    .not-for-you ul li {
+      padding: 8px 0 8px 28px;
+      position: relative;
+      color: #ffffff !important;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+    }
+    .not-for-you ul li::before {
+      content: '✗';
+      color: var(--burgundy);
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+    }
+
+    /* BIO */
+    .bio {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    @media (max-width: 640px) { .bio { grid-template-columns: 1fr; } }
+    .bio img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: #1a1a1a;
+      padding: 32px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+    .footer-legal a {
+      color: #1a1a1a;
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s;
+    }
+    .footer-legal a:hover { color: var(--gold); }
+    .footer-right a {
+      color: #000000;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .footer-right a:hover { opacity: 0.8; }
+
+    /* FINAL CTA SECTION */
+    .final-cta {
+      background: var(--burgundy);
+      color: var(--white);
+      text-align: center;
+      padding: 64px 20px;
+    }
+    .final-cta h2 { color: var(--white); margin-bottom: 16px; }
+    .final-cta p { color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto 32px; }
+
+    /* WICHTIGE FAKTEN */
+    .fakten {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+      margin: 32px 0;
+    }
+    @media(max-width:640px){ .fakten{grid-template-columns:1fr;} }
+    .fakt {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 24px;
+      border-top: 4px solid var(--gold);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .fakt p { margin: 0; font-size: 0.93rem; color: var(--text); }
+
+    /* STELL DIR VOR */
+    .stell-box {
+      background: var(--burgundy);
+      color: var(--white);
+      border-radius: 8px;
+      padding: 40px;
+      margin: 32px 0;
+    }
+    .stell-box h3 { color: var(--gold); margin-bottom: 20px; }
+    .stell-box ul { list-style: none; }
+    .stell-box ul li {
+      padding: 10px 0 10px 28px;
+      position: relative;
+      color: #ffffff !important;
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .stell-box ul li::before {
+      content: '›';
+      color: var(--gold);
+      position: absolute;
+      left: 0;
+      font-size: 1.3rem;
+      line-height: 1.4;
+    }
+
+    /* ANALYSE GRID */
+    .analyse-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      margin: 24px 0;
+      text-align: center;
+    }
+    @media(max-width:640px){.analyse-grid{grid-template-columns:1fr;}}
+    .analyse-item {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(224,179,72,0.25);
+      border-radius: 8px;
+      padding: 24px 16px;
+    }
+    .analyse-item p { color: rgba(255,255,255,0.8); margin:0; font-size:0.95rem; }
+
+    @media(max-width:768px){
+      nav { padding: 14px 20px; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* BURGUNDY OVERRIDE for sections after Wunschkunden */
+    section.burg-bg {
+      background: var(--burgundy) !important;
+      color: var(--white) !important;
+      position: relative;
+      z-index: 1;
+    }
+    section.burg-bg .inner p,
+    section.burg-bg p { color: #ffffff !important; }
+    section.burg-bg h2,
+    section.burg-bg h3 { color: var(--white) !important; }
+    section.burg-bg .check-list li { color: #ffffff !important; border-bottom-color: rgba(255,255,255,0.1) !important; }
+    section.burg-bg .not-for-you { background: rgba(0,0,0,0.2) !important; border-color: rgba(255,255,255,0.2) !important; }
+    section.burg-bg .faq-item { border-color: rgba(255,255,255,0.15) !important; }
+    section.burg-bg .faq-item p { color: rgba(255,255,255,0.8) !important; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+
+<!-- HERO -->
+<div class="hero">
+  <img src="https://raw.githubusercontent.com/emprkeathi-cmd/webtry/main/images/Blue%20Minimalist%20Lighthouse%20Harbor%20Logo.png" alt="Farah Magdalena Logo" style="height:159px;margin-bottom:8px;margin-top:0;display:block;margin-left:auto;margin-right:auto;" />
+  <h1>Nie wieder zu wenig Anfragen oder Kunden für <span>dein Angebot!</span></h1>
+  <p>Sieh dir jetzt das kurze Video an und erfahre wie unsere Kunden jede Woche planbar Anfragen gewinnen.</p>
+  <div class="video-wrap">
+    <div class="video-inner">
+      <iframe src="https://player.vimeo.com/video/1184337318?badge=0&autopause=0&player_id=0&app_id=58479&loop=1" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Marketing Strategin & Funnel Expertin"></iframe>
+    </div>
+  </div>
+  <a href="https://calendly.com/farahmagdalen/30min" target="_blank" class="btn">Ja, ich will planbare Kunden!</a>
+</div>
+
+<!-- HOOK -->
+<div class="hook">
+  <p style="color:#1a1a1a;">Du willst nicht mehr Kunden nachlaufen müssen. Du willst <strong>gefunden werden.</strong></p>
+  <p style="color:#1a1a1a;">Wenn du planbare Kunden willst und deine Expertise endlich richtig gesehen werden soll dann lies weiter.</p>
+  <p class="sub">Denn lass mich raten...</p>
+</div>
+
+<!-- PROBLEM -->
+<section>
+  <div class="label">Das Problem</div>
+  <h2>Du hast ein starkes Angebot und weißt trotzdem, <strong>da geht noch mehr.</strong></h2>
+  <div class="divider"></div>
+  <p>Anfragen kommen, aber nicht so konstant wie du es dir vorstellst.</p>
+  <p>Manche Monate laufen richtig gut. Andere bleiben hinter deinem Potenzial zurück.</p>
+  <p>Du bist in deinem eigenen Hamsterrad gefangen. Du bist selbstständig und musst dich vor keinem Chef rechtfertigen und trotzdem hast du das Gefühl du musst deinen Kunden nachlaufen. Oder du hast Kunden, aber deine Expertise kommt nicht so richtig rüber. Dadurch lässt du Potenzial liegen obwohl du weißt: da geht noch mehr.</p>
+  <p>Du bist aktiv. Du hast eine Website, du postest, vielleicht hast du bereits investiert. Du machst vieles richtig aber das System dahinter holt noch nicht alles raus was möglich wäre.</p>
+  <p><strong>Das liegt nicht an deinem Angebot.</strong> Es liegt daran, dass das System dahinter und die Schärfe deines Angebots noch nicht stark genug sind.</p>
+  <p>Deine Positionierung, dein Funnel und die Art wie du vorankommst all das muss ineinandergreifen wie ein funktionierendes Zahnrad. Ich analysiere deinen gesamten Business-Auftritt und begleite dich bis zu deinem gewünschten Ergebnis.</p>
+  <div class="btn-center">
+    <a href="https://calendly.com/farahmagdalen/30min" target="_blank" class="btn">Hol dir jetzt deine kostenlosen Impulse!</a>
+  </div>
+</section>
+
+<!-- LÖSUNG -->
+<section class="dark-bg">
+  <div class="inner">
+    <div class="label">Die Lösung</div>
+    <h2>Ich schärfe deine Positionierung, optimiere deinen Funnel und sorge dafür dass du das Potenzial das bereits da ist <span>endlich vollständig ausschöpfst.</span></h2>
+    <div class="divider"></div>
+    <p>Nicht als Agentur die baut und verschwindet. Nicht als Coach der redet aber nichts umsetzt. Sondern als jemand der beides gleichzeitig macht weil beides nötig ist.</p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="number">01</div>
+        <h3>Positionierung schärfen</h3>
+        <p style="font-size:clamp(1.15rem,2.5vw,1.5rem);">Klar sagen wer du bist, was du kannst und wen du anziehst.</p>
+      </div>
+      <div class="pillar">
+        <div class="number">02</div>
+        <h3>Funnel optimieren</h3>
+        <p style="font-size:clamp(1.15rem,2.5vw,1.5rem);">Texte die wirklich verkaufen. Ein System das für dich arbeitet.</p>
+      </div>
+      <div class="pillar">
+        <div class="number">03</div>
+        <h3>Begleitung bis zum Ziel</h3>
+        <p style="font-size:clamp(1.15rem,2.5vw,1.5rem);">Du weißt was zu tun ist und tust es auch. Gemeinsam.</p>
+      </div>
+    </div>
+
+    <p>Was alle danach hatten: ein System das für sie arbeitet nicht umgekehrt. Das kann auch dein Ergebnis sein.</p>
+
+    <ul class="check-list">
+      <li style="color:#1a1a1a;">Verkaufspsychologisch fundierte Kommunikation entwickelt aus über 100 Kundenprojekten.</li>
+      <li style="color:#1a1a1a;">Eine Positionierung die endlich klar sagt wer du bist, was du kannst und wen du anziehst.</li>
+      <li style="color:#1a1a1a;">Ein Marketing-System das deine Wunschkunden anzieht individuell auf dein Business zugeschnitten, nicht von der Stange.</li>
+      <li style="color:#1a1a1a;">Ein Funnel der Interessenten Schritt für Schritt zu dir führt. Schluss mit nachlaufen.</li>
+      <li style="color:#1a1a1a;">Texte die psychologisch präzise ansprechen genau dort wo es wichtig ist.</li>
+      <li style="color:#1a1a1a;">Eine Begleitung die dafür sorgt dass du nicht nur planst sondern auch ins Tun kommst. Weil das der Unterschied ist zwischen einem System das steht und einem das wirklich läuft.</li>
+      <li style="color:#1a1a1a;">Schluss mit dem Auf und Ab. Mit einem System das konstant Anfragen bringt weil es strategisch gebaut ist.</li>
+    </ul>
+
+    <div class="btn-center">
+      <a href="https://calendly.com/farahmagdalen/30min" target="_blank" class="btn">Ja, ich will meine Ziele erreichen!</a>
+    </div>
+  </div>
+</section>
+
+<!-- WAS EIN SYSTEM TUT -->
+<section>
+  <div class="label">Was ein funktionierendes Marketing-System für dich tut</div>
+  <h2>Die richtige Strategie ist dein <span>größter Hebel.</span></h2>
+  <div class="divider"></div>
+
+  <div class="img-text">
+    <img src="https://raw.githubusercontent.com/emprkeathi-cmd/webtry/main/images/Textoptimierung%20f%C3%BCr%20Webseiten.jpg" />
+    <div>
+      <ul class="check-list">
+        <li>Es zieht die richtigen Menschen an, bevor du sie aktiv ansprechen musst</li>
+        <li>Es baut Vertrauen auf, schon bevor jemand mit dir spricht</li>
+        <li>Es führt Interessenten durch jeden Schritt, bis zur Anfrage</li>
+        <li>Und es ist auffindbar, auch in der KI-Suche</li>
+      </ul>
+      <p>Dafür muss deine Positionierung klar sein. Alle deine Funnel-Touchpoints müssen ineinandergreifen. Und du selbst musst das Gefühl haben, Dinge zu schaffen nicht nur zu planen.</p>
+      <p><strong>Du weißt dass mehr geht. Jetzt holen wir es raus. Gemeinsam.</strong></p>
+    </div>
+  </div>
+
+  <div class="btn-center">
+    <a href="https://calendly.com/farahmagdalen/30min" target="_blank" class="btn">Termin sichern!</a>
+  </div>
+</section>
+
+<!-- WICHTIGE FAKTEN -->
+<section class="dark-bg">
+  <div class="inner">
+    <div class="label">Wichtige Fakten</div>
+    <h2>Was du wissen <span>musst</span></h2>
+    <div class="divider"></div>
+
+    <div class="fakten">
+      <div class="fakt" style="background:rgba(255,255,255,0.05);border-top-color:var(--gold);">
+        <p style="color:#1a1a1a;font-size:clamp(1.15rem,2.5vw,1.5rem);">Viele basteln generischen KI-Müll, ohne die Erfahrung zu haben was wirklich funktioniert.</p>
+      </div>
+      <div class="fakt" style="background:rgba(255,255,255,0.05);border-top-color:var(--gold);">
+        <p style="color:#1a1a1a;font-size:clamp(1.15rem,2.5vw,1.5rem);">Du willst konkrete Ergebnisse keine weiteren Experimente auf eigene Kosten.</p>
+      </div>
+      <div class="fakt" style="background:rgba(255,255,255,0.05);border-top-color:var(--gold);">
+        <p style="color:#1a1a1a;font-size:clamp(1.15rem,2.5vw,1.5rem);">Je nach Bedarf analysieren wir deinen Social-Media-Auftritt, dein E-Mail-Marketing oder dein komplettes Funnel-System.</p>
+      </div>
+    </div>
+
+    <p>Und sorgen dafür, dass du planbar Kunden gewinnst!</p>
+    <p>In jedem Fall gehst du mit konkreten Ideen und Impulsen schon aus dem ersten Gespräch heraus, die du sofort für dich verwenden darfst.</p>
+
+    <div class="btn-center">
+      <a href="https://calendly.com/farahmagdalen/30min" target="_blank" class="btn">Zu mehr Umsatz Hier!</a>
+    </div>
+  </div>
+</section>
+
+<!-- IST DAS WAS FÜR DICH -->
+<section>
+  <div class="label">Ist das was für dich?</div>
+  <h2>JA, wenn du …</h2>
+  <div class="divider"></div>
+  <ul class="check-list">
+    <li><strong>UnternehmerIn bist und dein Business ernsthaft wachsen lassen willst.</strong></li>
+    <li><strong>Weißt, dass die Online-Welt enormes Potenzial für dich hat.</strong></li>
+    <li><strong>Keine Lust mehr hast selbst herauszufinden warum es nicht funktioniert.</strong></li>
+    <li><strong>Verstehst, dass verkaufsstarke Texte dein stärkster Umsatzhebel sind.</strong></li>
+  </ul>
+
+  
+</section>
+
+<!-- DIE FOLGEN -->
+<section class="dark-bg">
+  <div class="inner">
+    <div class="label">Die Folgen</div>
+    <h2>Wenn dein Marketing-System <span>Lücken hat</span></h2>
+    <div class="divider"></div>
+    <ul class="check-list">
+      <li style="color:#1a1a1a;">Du siehst es in den stillen Monaten. In den Anfragen die nie kamen...</li>
+      <li style="color:#1a1a1a;">In den Besuchern die deine Website wieder verlassen haben, ohne zu kaufen...</li>
+      <li style="color:#1a1a1a;">An den erhofften Kunden die ausbleiben, obwohl dein Angebot wertvoll ist...</li>
+    </ul>
+
+    <div class="money-box" style="background:#5E1414;border:1px solid rgba(224,179,72,0.3);position:relative;z-index:2;">
+      <p><strong style="color:var(--white);">Schon mal gerechnet?</strong></p>
+      <p>Wenn ein Wunschkunde dir im Schnitt 500 € bringt und drei pro Monat abspringen, weil dein Funnel-System sie nicht abholt, sind <span class="big">1.500 €</span> weg. Still. Jeden Monat.</p>
+      <p>Und, wenn ein Kunde 5.000 € wert ist? Dann verlierst du bei drei verpassten Anfragen im Monat <span class="big">15.000 €</span>.</p>
+      <p>In drei Monaten: <span class="big">45.000 €</span>, einfach weg.</p>
+    </div>
+
+    <div class="btn-center">
+      <a href="https://calendly.com/farahmagdalen/30min" target="_blank" class="btn">Ja, ich will planbare Kunden!</a>
+    </div>
+  </div>
+</section>
+
+<!-- MEHR UMSATZ / SHIELDS -->
+<section style="position:relative;z-index:1;">
+  <ul class="shield-list">
+    <li>Mehr Umsatz</li>
+    <li>Kunden kommen zu dir</li>
+    <li>Deine Expertise gezeigt</li>
+  </ul>
+
+  <div style="text-align:center;margin:40px 0;">
+    
+    <h2 style="font-size:1.4rem;">Deine Wunschkunden klicken auf deine Website und denken:</h2>
+    <p style="font-size:1.3rem;font-style:italic;color:#ffffff;font-family:'Cormorant Garamond',serif;font-weight:700;margin-top:12px;">„Genau das brauche ich."</p>
+  </div>
+
+  <div class="stell-box">
+    <h3>STELL DIR VOR!</h3>
+    <ul>
+      <li style="color:#ffffff;">Dein System zieht genau die richtigen Personen an</li>
+      <li style="color:#ffffff;">Dein Funnel führt sie weiter</li>
+      <li style="color:#ffffff;">Deine Texte holen sie ab</li>
+      <li style="color:#ffffff;">Und du bekommst Anfragen, während du dich um dein Business kümmerst.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- WAS IST ANDERS -->
+<section class="dark-bg burg-bg">
+  <div class="inner">
+    <div class="label">Was ist hier anders?</div>
+    <h2>Marketing ist keine hübsche Website. <span>Marketing ist Strategie. Analyse. Psychologie.</span></h2>
+    <div class="divider"></div>
+
+    <p>Bevor wir in die Umsetzung gehen, schaue ich mir an wo dein System Kunden verliert und warum.</p>
+    <p>Ich identifiziere deine Wunschkunden und was sie wirklich bewegt.</p>
+    <p>Dann setzen wir an den Punkten an die wirklich wirken:</p>
+
+    <ul class="check-list">
+      <li>Mit Texten die psychologisch präzise ansprechen</li>
+      <li>Einem logisch-didaktisch aufgebauten Funnel und einer Kommunikation die Vertrauen aufbaut.</li>
+    </ul>
+
+    <p><strong style="color:var(--white);">Keine Standardlösung. Kein Copy-Paste. Sondern individuell, weil dein Business es ist.</strong></p>
+
+    <div class="btn-center">
+      <a href="https://calendly.com/farahmagdalen/30min" target="_blank" class="btn">Individuelle Strategie → Hier!</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="label">Das sagen Kunden</div>
+  <h2>Bereits über <span>100+ Unternehmer</span> vertrauen auf unsere Strategien</h2>
+  <div class="divider"></div>
+
+  <div class="testimonials">
+    <div class="testimonial-card">
+      <img src="https://raw.githubusercontent.com/emprkeathi-cmd/webtry/main/images/SEO%E2%80%91optimierte%20Inhalte.jpg" alt="Wilfried Reinthaler" />
+      <p>„Durch die neuen Texte war auf kraftvolle Art genau das auf meiner neuen Homepage, was ich schon immer zum Ausdruck bringen wollte!"</p>
+      <cite>Wilfried Reinthaler / Coach</cite>
+    </div>
+    <div class="testimonial-card">
+      <img src="https://raw.githubusercontent.com/emprkeathi-cmd/webtry/main/images/Screenshot%20(15).png" alt="Julia Beke" />
+      <p>„Mit Farah Magdalenas Marketing Strategie, hatte ich endlich einen roten Fahrplan, welche Schritte mich wirklich zu meinen Zielen bringen"</p>
+      <cite>Julia Beke / LSB</cite>
+    </div>
+  </div>
+
+  <div class="btn-center">
+    <a href="https://calendly.com/farahmagdalen/30min" target="_blank" class="btn">JA, ich will meine Ziele erreichen!</a>
+  </div>
+</section>
+
+<!-- NICHT FÜR DICH -->
+<section class="dark-bg burg-bg">
+  <div class="inner">
+    <div class="label">Nicht für dich, wenn …</div>
+    <div class="not-for-you" style="background:rgba(94,20,20,0.3);border-color:rgba(94,20,20,0.5);">
+      <ul>
+        <li style="color:#ffffff;">du eigentlich gar nichts verändern willst, weil du eher Stillstand möchtest</li>
+        <li style="color:#ffffff;">du nicht bereit bist, für eine gewinnbringende Zusammenarbeit</li>
+        <li style="color:#ffffff;">du glaubst, dass es bei deinen Texten nichts mehr zu verbessern gibt</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top:40px;">Warum haben sich bereits +100 UnternehmerInnen für unsere <span>verkaufspsychologischen Texte & Marketing Strategien</span> entschieden?</h2>
+    <div class="divider"></div>
+
+    <div class="btn-center">
+      <a href="https://calendly.com/farahmagdalen/30min" target="_blank" class="btn">JA, ich will meine Ziele erreichen!</a>
+    </div>
+
+    <h3 style="margin-top:48px;">Also warum nicht später?</h3>
+    <ul class="check-list" style="margin-top:16px;">
+      <li style="color:#ffffff;">Weil du dir jeden Tag Umsatz entgehen lässt, wenn du deine Texte nicht in Profi-Hände gibst</li>
+      <li style="color:#ffffff;">Weil KI-Tools nicht echt klingen und weder Strategie noch Verkaufspsychologie ersetzen.</li>
+      <li style="color:#ffffff;">Weil bisherige Kunden sich davon bereits überzeugen konnten!</li>
+    </ul>
+  </div>
+</section>
+
+<!-- WER WIR SIND -->
+<section>
+  <div class="label">Wer sind wir?</div>
+  <h2>Was mit <span>Farah Magdalena</span> begann, ist heute ein eingespieltes System.</h2>
+  <div class="divider"></div>
+
+  <div class="bio">
+    <img src="https://raw.githubusercontent.com/emprkeathi-cmd/webtry/main/images/Online%20Marketing%20Texte.jpg" alt="Farah Magdalena" />
+    <div>
+      <p>Was mit Farah Magdalena als Einzelperson begann, ist heute ein eingespieltes System entwickelt aus Jahren der Arbeit mit Selbstständigen aus verschiedensten Branchen.</p>
+      <p>Ich schaue mir dein gesamtes Business an. Die Positionierung. Den Funnel. Die Kommunikation an jedem Touchpoint. Und ich begleite dich dabei nicht nur auf dem Papier sondern so lange bis es wirklich läuft.</p>
+      <p>Unsere Marketing Strategien und Texte haben bereits in folgenden Branchen erfolgreich funktioniert: E-Commerce, Beratungsunternehmen, IT Bereichen, Beauty Companies, Technik Unternehmen, Dienstleister und viele mehr.</p>
+      
+    </div>
+  </div>
+
+  <div class="btn-center" style="margin-top:40px;">
+    <a href="https://calendly.com/farahmagdalen/30min" target="_blank" class="btn">Du hast zwei Möglichkeiten wähle jetzt!</a>
+  </div>
+
+  <div style="background:var(--burgundy);color:var(--white);border-radius:8px;padding:32px;margin:32px 0;text-align:center;">
+    <h3 style="color:var(--white);margin-bottom:8px;">Du hast zwei Möglichkeiten:</h3>
+    <p style="color:#ffffff;">Weiter optimieren auf eigene Faust oder mit jemandem zusammenarbeiten der sich deine Situation genau ansieht, die richtigen Hebel in Bewegung setzt, den Funnel für dich umsetzt und auch für dich da ist damit du vorankommst.</p>
+    <p style="color:#ffffff;">Du verdienst ein System das für dich arbeitet. Nicht eines das du täglich am Laufen halten musst.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="dark-bg burg-bg">
+  <div class="inner">
+    <div class="label">Du möchtest noch mehr lesen?</div>
+    <h2>Das kann üblicherweise nur <span>2 Gründe</span> haben:</h2>
+    <div class="divider"></div>
+    <p style="color:#ffffff;">1. Du bekommst nicht genug von unseren Texten und hast Spaß am Lesen? Wenn Du gerne unsere Texte liest: Lieben Dank dir, das ist ein großes Kompliment!</p>
+    <p style="color:#ffffff;">2. Du bist noch leicht skeptisch. Vielleicht, weil du schon einmal schlechte Erfahrungen mit schlechten Agenturen, Beratern oder Coaches gemacht hast?</p>
+
+    <p style="color:#ffffff;">Lass mich dir die üblichen Fragen beantworten:</p>
+
+    <div class="faq" style="margin-top:24px;">
+      <div class="faq-item" style="border-color:rgba(255,255,255,0.1);">
+        <strong style="color:var(--gold);">FRAGE: Wer garantiert mir, dass die Zusammenarbeit funktionieren wird?</strong>
+        <p>Ganz einfache Antwort: Niemand. Jeder, der dir im Online-Marketing irgendwelche Garantien für Ergebnisse ausspricht, sichert sich entweder mit unethischen Verträgen ab oder ist bald pleite.</p>
+      </div>
+      <div class="faq-item" style="border-color:rgba(255,255,255,0.1);">
+        <strong style="color:var(--gold);">FRAGE: Woher wollt ihr wissen, dass es für mich funktioniert?</strong>
+        <p>Du hast recht, die Online-Welt funktioniert nicht für jeden und nicht für jede Branche gleichermaßen.</p>
+      </div>
+      <div class="faq-item" style="border-color:rgba(255,255,255,0.1);">
+        <strong style="color:var(--gold);">FRAGE: Du hast noch weitere Fragen?</strong>
+        <p>Ich könnte hier noch ewig weiterschreiben, in weit über 100+ Beratungsgesprächen hört man viele Fragen.</p>
+      </div>
+      <div class="faq-item" style="border-color:rgba(255,255,255,0.1);">
+        <strong style="color:var(--gold);">FRAGE: Oder möchtest du weiter warten und die Leads der Konkurrenz überlassen?</strong>
+        <p>Gruß Farah Magdalena</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIO + FINAL CTA -->
+<section>
+  <div class="label">Es kann für dich das wichtigste Gespräch dieses Jahr sein!</div>
+  <h2>In wenigen Minuten im kostenfreien Strategiegespräch finden wir heraus, <span>wie du mehr Umsatz gewinnst!</span></h2>
+  <div class="divider"></div>
+
+  <div class="img-text">
+    <img src="https://raw.githubusercontent.com/emprkeathi-cmd/webtry/main/images/Mehr%20Umsatz%20durch%20Online%E2%80%91Auftritt.jpg" alt="Farah Magdalena" style="width:100%;" />
+    <div>
+      <p>Bevor ich ins Marketing kam, war ich viele Jahre als Pädagogin tätig und konnte Menschen jeden Alters begleiten. Davon profitierst du, denn individuelle Stärken zu erkennen und Schritt für Schritt Fortschritte zu erzielen, liegt mir ausgesprochen.</p>
+      <p>Durch meine Erfahrung aus über sechs Jahren Marketing und einem Team mit gemeinsam über 30 Jahren Erfahrung, habe ich bewährte Strategien entwickelt, die sowohl Startups als auch etablierte Firmen unterstützen, damit du schneller Ergebnisse siehst.</p>
+      <ul class="check-list">
+        <li>Du bekommst gezielte Impulse, die sofort wirken.</li>
+        <li>Du sparst Geld und Zeit, weil du nicht alles selbst herausfinden musst</li>
+        <li>Deine Kommunikation wird klar, zielgerichtet und überzeugend.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="btn-center" style="margin-top:40px;">
+    <a href="https://calendly.com/farahmagdalen/30min" target="_blank" class="btn">Lass uns sprechen!</a>
+  </div>
+</section>
+
+<!-- FINAL CTA BLOCK -->
+<div class="final-cta">
+  <h2>Dein Schritt zu planbaren Kunden</h2>
+  <p>Jetzt kostenfreies Strategiegespräch sichern und erfahre wo dein größtes Potenzial liegt.</p>
+  <a href="https://calendly.com/farahmagdalen/30min" target="_blank" class="btn">HIER zu deinem Termin!</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-legal">
+    <a href="pages/impressum.html" target="_blank">Impressum</a>
+    <a href="pages/agb.html" target="_blank">AGB</a>
+    <a href="pages/widerrufsrecht.html" target="_blank">Widerrufsrecht</a>
+    <a href="pages/datenschutz.html" target="_blank">Datenschutzbelehrung</a>
+  </div>
+  <div class="footer-right">
+    <a href="https://linkedin.com/in/farah-magdalena" target="_blank" style="display:inline-flex;align-items:center;gap:8px;color:#000000;text-decoration:none;font-weight:600;font-size:0.9rem;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#000000"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn Farah Magdalena</a>
+  </div>
+</footer>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
