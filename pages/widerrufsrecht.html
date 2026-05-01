@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Widerrufsbelehrung – Farah Magdalena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --gold: #E0B348;
+      --burgundy: #5E1414;
+      --dark: #ffffff;
+      --light: #3d4a5c;
+      --white: #ffffff;
+      --text: #1a1a1a;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #ffffff;
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    nav {
+      background: var(--dark);
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav img { height: 48px; }
+    nav a.back {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    nav a.back:hover { color: var(--burgundy); }
+
+    .page-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 60px 32px 80px;
+    }
+
+    .label {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 32px;
+      line-height: 1.2;
+    }
+
+    .divider {
+      width: 48px;
+      height: 3px;
+      background: var(--gold);
+      margin: 0 0 24px;
+    }
+
+    .section-block {
+      background: var(--dark);
+      border-radius: 8px;
+      padding: 36px 40px;
+      margin-bottom: 24px;
+    }
+
+    .section-block h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--gold);
+    }
+
+    .section-block p {
+      color: var(--text);
+      font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+      margin-bottom: 10px;
+      line-height: 1.8;
+    }
+
+    .section-block a {
+      color: var(--burgundy);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .section-block a:hover { text-decoration: underline; }
+
+    .formular-box {
+      background: rgba(94,20,20,0.06);
+      border: 1px solid rgba(94,20,20,0.2);
+      border-radius: 6px;
+      padding: 24px 28px;
+      margin-top: 16px;
+    }
+    .formular-box p {
+      color: var(--text);
+      margin-bottom: 8px;
+      font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gold);
+      color: #000000;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+      cursor: pointer;
+      border: none;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #1a1a1a;
+      padding: 28px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.85rem;
+    }
+    .footer-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+    .footer-legal a { color: #1a1a1a; text-decoration: none; }
+    .footer-legal a:hover { color: var(--burgundy); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <img src="../images/logo.png" alt="Farah Magdalena Logo" />
+  <a href="../index.html" class="back">← Zurück zur Hauptseite</a>
+</nav>
+
+<div class="page-wrap">
+
+  <div class="label">Rechtliches</div>
+  <h1>Widerrufsbelehrung</h1>
+  <div class="divider"></div>
+
+  <div class="section-block">
+    <h2>Widerrufsrecht</h2>
+    <p>Verbraucher haben das Recht, binnen 14 Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses.</p>
+    <p>Um Ihr Widerrufsrecht auszuüben, müssen Sie uns mittels einer eindeutigen Erklärung (z. B. per E-Mail) über Ihren Entschluss informieren.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Folgen des Widerrufs</h2>
+    <p>Wenn Sie diesen Vertrag widerrufen, werden alle von Ihnen geleisteten Zahlungen unverzüglich und spätestens binnen 14 Tagen zurückerstattet.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Vorzeitiges Erlöschen des Widerrufsrechts</h2>
+    <p>Bei Dienstleistungen und individuell erstellten digitalen Inhalten erlischt das Widerrufsrecht vorzeitig, wenn der Kunde ausdrücklich zustimmt, dass die Anbieterin vor Ablauf der Widerrufsfrist mit der Leistung beginnt und der Kunde bestätigt, dass er dadurch sein Widerrufsrecht verliert.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>Muster-Widerrufsformular</h2>
+    <p>Gesetzlich vorgesehen, Nutzung freiwillig. Wenn Sie den Vertrag widerrufen möchten, können Sie dieses Formular verwenden:</p>
+    <div class="formular-box">
+      <p><strong>An:</strong><br />Farah Magdalena Nazari<br />E-Mail: <a href="mailto:farahmagdalen@gmail.com">farahmagdalen@gmail.com</a></p>
+      <p style="margin-top:12px;">Hiermit widerrufe ich den von mir abgeschlossenen Vertrag über die Erbringung folgender Dienstleistung:</p>
+      <p style="margin-top:12px;">Bestellt am: ___________________</p>
+      <p>Name: ___________________</p>
+      <p>Adresse: ___________________</p>
+      <p>Datum: ___________________</p>
+      <p>Unterschrift (nur bei Mitteilung auf Papier): ___________________</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-legal">
+    <a href="impressum.html">Impressum</a>
+    <a href="agb.html">AGB</a>
+    <a href="widerrufsrecht.html">Widerrufsrecht</a>
+    <a href="datenschutz.html">Datenschutzbelehrung</a>
+  </div>
+  <button class="download-btn" onclick="downloadWiderruf()" style="margin:0;padding:10px 20px;font-size:0.85rem;">&#8595; Widerruf herunterladen</button>
+</footer>
+
+<script>
+function downloadWiderruf() {
+  const text = `WIDERRUFSBELEHRUNG (FÜR VERBRAUCHER)
+Farah Magdalena Nazari – Marketingstrategien und Werbetexterin e.U.
+
+WIDERRUFSRECHT
+Verbraucher haben das Recht, binnen 14 Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses.
+
+Um Ihr Widerrufsrecht auszuüben, müssen Sie uns mittels einer eindeutigen Erklärung (z. B. per E-Mail) über Ihren Entschluss informieren.
+
+FOLGEN DES WIDERRUFS
+Wenn Sie diesen Vertrag widerrufen, werden alle von Ihnen geleisteten Zahlungen unverzüglich und spätestens binnen 14 Tagen zurückerstattet.
+
+VORZEITIGES ERLÖSCHEN DES WIDERRUFSRECHTS
+Bei Dienstleistungen und individuell erstellten digitalen Inhalten erlischt das Widerrufsrecht vorzeitig, wenn der Kunde ausdrücklich zustimmt, dass die Anbieterin vor Ablauf der Widerrufsfrist mit der Leistung beginnt und der Kunde bestätigt, dass er dadurch sein Widerrufsrecht verliert.
+
+MUSTER-WIDERRUFSFORMULAR (gesetzlich vorgesehen, Nutzung freiwillig)
+
+An:
+Farah Magdalena Nazari
+E-Mail: farahmagdalen@gmail.com
+
+Hiermit widerrufe ich den von mir abgeschlossenen Vertrag über die Erbringung folgender Dienstleistung:
+
+Bestellt am: ___________________
+Name: ___________________
+Adresse: ___________________
+Datum: ___________________
+Unterschrift (nur bei Mitteilung auf Papier): ___________________`;
+
+  const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'Widerrufsbelehrung-Farah-Magdalena.txt';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+</script>
+
+</body>
+</html>
